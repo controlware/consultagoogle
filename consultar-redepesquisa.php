@@ -1,6 +1,6 @@
 <?php
 
-require_once(__DIR__."/lib/robogoogle-1.1.0/index.php");
+require_once(__DIR__."/lib/robogoogle-1.2.0/index.php");
 
 use Source\Crawlers\adsGoogle;
 
