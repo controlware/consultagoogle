@@ -57,7 +57,7 @@ class adsGoogle
             }
         }
 
-        return $stores;
+        return json_encode($stores);
     }
 
     public function getAdvertsText($products)

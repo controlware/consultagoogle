@@ -12,4 +12,8 @@ if(strlen($termo) === 0){
 $exec = new adsGoogle();
 $result = $exec->getAdsGoogle($termo);
 
-echo json_encode($result);
+if(!is_string($result)){
+    $result = json_encode($result);
+}
+
+echo $result;
