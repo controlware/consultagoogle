@@ -1,6 +1,8 @@
 <?php
 
 require_once __DIR__ . '/vendor/autoload.php';
+
+/*
 use Source\Helpers\StringHelper;
 use Source\Crawlers\adsGoogle;
 use Psr\Http\Message\RequestInterface;
@@ -16,7 +18,7 @@ $exec = new adsGoogle();
 $result = $exec->getAdsGoogle($products);
 //$result = $exec->getAdvertsText($products);
 var_dump($result);die();
-
+*/
 
 
 
