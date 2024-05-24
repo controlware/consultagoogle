@@ -60,6 +60,7 @@ class adsGoogle
     public function getAdvertsText($products)
     {
         $products = str_replace(" ", "+", $products);
+
         $result = $this->guzzle->request('GET', 'https://www.google.com/search?q='.$products.'&oq='.$products.'&sclient=gws-wiz/'
 
         );

@@ -63,9 +63,7 @@ class adsGoogle
     public function getAdvertsText($products)
     {
         $products = str_replace(" ", "+", $products);
-        $result = $this->guzzle->request('GET', 'https://www.google.com/search?q='.$products.'&oq='.$products.'&sclient=gws-wiz/'
-
-        );
+        $result = $this->guzzle->request('GET', 'https://www.google.com/search?q='.$products.'&oq='.$products.'&sclient=gws-wiz/');
         $text = $result->getBody()->getContents();
         $textS = StringHelper::doRegex($text, '/class="uEierd"[\w\W]+?>([\w\W]+?C2yzkd")/i')[1];
 

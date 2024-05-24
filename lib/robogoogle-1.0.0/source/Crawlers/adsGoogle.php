@@ -17,6 +17,7 @@ class adsGoogle
     public function getAdsGoogle($products)
     {
         $products = str_replace(" ", "+", $products);
+        
         $result = $this->guzzle->request('GET', 'https://www.google.com/search?q=' . $products . '&oq=' . $products . '&sclient=gws-wiz');
         $text = $result->getBody()->getContents();
         $textS = StringHelper::doRegex($text, '/zPEcBd VZqTOd[\w\W]+?">([\w\W]+?)</i')[1];
