@@ -9,19 +9,11 @@ use GuzzleHttp\Handler\CurlHandler;
 use GuzzleHttp\Client;
 use GuzzleHttp\Middleware;
 
-
+/*
 //Sat Gertec, Balança Toledo prix 4uno, Sat Sweda, Leitor codigo de barras Zebra, epson tmt20x
 $products = 'sat dimep';
 $exec = new adsGoogle();
 //$result = $exec->getAdsGoogle($products);
 $result = $exec->getAdvertsText($products);
 var_dump($result);die();
-
-
-
-
-
-
-
-
-
+*/
