@@ -1,6 +1,6 @@
 <?php
 
-require_once(__DIR__."/lib/robogoogle-1.4.0/vendor/autoload.php");
+require_once(__DIR__."/lib/robogoogle-1.5.0/vendor/autoload.php");
 
 use Source\Crawlers\adsGoogle;
 
